@@ -1,0 +1,97 @@
+:root{
+  --red:hsl(0, 100%, 74%) ;
+  --green:hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  
+  --dark-blue:hsl(249, 10%, 26%);
+  --grayis-blue:hsl(246, 25%, 77%);
+}
+body{
+  background-color:var(--red);
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  background-image: url("../images/bg-intro-mobile.png");
+}
+.container{
+  width:90%;
+  padding: 3rem 0;
+}
+.description{
+  text-align: center;
+  color:white;
+}
+.description__title{
+  padding: 0rem 2rem; 
+  font-size: 2rem;
+  font-weight: 700;
+}
+.description__paragraph{
+  font-weight: 400;
+}
+.promotion{
+  background-color: var(--blue);
+  border-radius: 0.5rem;
+  height: 5rem;
+  color:white;
+  text-align: center;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, .15);
+}
+.promotion-span{
+  font-weight: 700;
+}
+.form{
+  background-color:white;
+  padding: 1.5rem;
+  display:flex;
+  flex-direction:column;
+  border-radius: 0.5rem;
+  gap:1rem;
+  box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, .15);
+}
+.form-element{
+  border-radius: 0.5rem;
+  height:2.5rem;
+  font-size: 1.2rem;
+  padding-left: 1.2rem;
+  border:1.5px solid var(--grayis-blue);
+  outline: none;
+}
+::placeholder{
+  font-family: 'Poppins', sans-serif;
+  color:var(--dark-blue);
+  font-size: 1rem;
+}
+.btn{
+  font-family: 'Poppins', sans-serif;
+  color:white;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing:2px;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border:none;
+  background-color:var(--green);
+  vertical-align: center;
+  box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.1);
+
+}
+.terms{
+  margin: 0;
+  padding:0 3rem 0 3rem;
+  text-align: center;
+  color:var(--grayis-blue);
+  font-size: 0.75rem;
+}
+.terms-span{
+  font-weight: 600;
+  color:var(--red);
+}
