@@ -15,6 +15,7 @@ body{
   align-items: center;
   justify-content:center;
   background-image: url("../images/bg-intro-mobile.png");
+  background-repeat: no-repeat;
   min-width: 360px;
 }
 .container{
@@ -59,12 +60,30 @@ body{
   box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, .15);
 }
 .form-element{
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
   border-radius: 0.5rem;
   height:2.5rem;
   font-size: 1.2rem;
   padding-left: 1.2rem;
   border:1.5px solid var(--grayis-blue);
   outline: none;
+  color:var(--dark-blue);
+}
+label{
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+}
+label.error::before{
+  position: absolute;
+  content:url("../images/icon-error.svg");
+  bottom:calc(50% - 4px);
+  right: 1rem;
+  transform: translate(calc(50% - 2px),50%);
+  z-index: 2;
+  text-align: center;
 }
 ::placeholder{
   font-family: 'Poppins', sans-serif;
@@ -83,7 +102,7 @@ body{
   background-color:var(--green);
   vertical-align: center;
   box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.1);
-
+  cursor: pointer;
 }
 .terms{
   margin: 0;
@@ -97,13 +116,23 @@ body{
   color:var(--red);
 }
 
-
+/* JS Clases */
+input.error{
+  border:1px solid var(--red);  
+}
+input.success{
+  border:1px solid var(--green);
+}
 
 /* Media Queries */
 
 /* // Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 576px){
+  body{
+    background-image: url("../images/bg-intro-desktop.png");
+    background-repeat: no-repeat;
+  }
 .container{
   width: 90%;
   display: flex;
@@ -154,7 +183,7 @@ body{
 }
 @media (min-width: 992px){
   body{
-    max-width: 1200px;
+    max-width: 1240px;
   }
   .container{
     width: 80%;

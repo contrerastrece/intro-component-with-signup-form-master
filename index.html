@@ -32,16 +32,43 @@
           <span class="promotion-span">Try it free 7 days </span> then $20/mo.
           thereafter
         </p>
-        <form class="form">
-          <input type="text" class="form-element" placeholder="First Name" />
-          <input type="text" class="form-element" placeholder="Last Name" />
-          <input
-            type="email"
-            class="form-element"
-            placeholder="Email Address"
-          />
-          <input type="password" class="form-element" placeholder="Password" />
-          <button id="btn" class="btn">CLAIM YOUR FREE TRIAL</button>
+        <form class="form" id="form">
+          <label>
+            <input
+              type="text"
+              name="name"
+              class="form-element"
+              placeholder="First Name"
+              autofocus
+            />
+          </label>
+          <label>
+            <input
+              type="text"
+              name="last_name"
+              class="form-element"
+              placeholder="Last Name"
+            />
+          </label>
+          <label>
+            <input
+              type="text"
+              class="form-element"
+              placeholder="Email Address"
+              name="email"
+            />
+          </label>
+          <label>
+            <input
+              type="password"
+              name="password"
+              class="form-element"
+              placeholder="Password"
+            />
+          </label>
+          <button id="btn" class="btn" type="submit">
+            CLAIM YOUR FREE TRIAL
+          </button>
           <p class="terms">
             By clicking the button, you are agreeing to our
             <span class="terms-span">Terms and Services</span>
